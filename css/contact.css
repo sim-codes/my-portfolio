@@ -50,6 +50,7 @@ textarea{
     min-height: 5em;
     border-radius: 0.5em;
     border: none;
+    resize: none;
 }
 
 form input{
