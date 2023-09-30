@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block csslink %}<link rel="stylesheet" href="{% static 'css/typing.css' %}">{% endblock csslink %}
+
+{% block content %}
+<h1 aria-label="Hi! I'm a developer">
+    Hi! I'm &nbsp;<span class="typewriter"></span>
+</h1>
+{% endblock content %}

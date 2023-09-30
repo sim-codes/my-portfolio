@@ -1,0 +1,47 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block title %}My Works{% endblock title %}
+
+{% block csslink %}<link rel="stylesheet" href="{% static 'css/pg-styling.css' %}">{% endblock csslink %}
+
+{% block content %}
+
+<div class="container pg-ctn">
+    <div class="row align-items-center justify-content-center wrap">
+        <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="https://ausearch.netlify.app/" >
+                <img src="{% static 'images/au-search.png' %}" alt="" class="img-thumbnail">
+            </a>
+        </div>
+        
+
+        <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="https://ecalagos.com.ng/" >
+                <img src="{% static 'images/eca.png' %}" alt="" class="img-thumbnail">
+            </a>
+        </div>
+
+        <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="https://legitimatehomes.com.ng/" >
+                <img src="{% static 'images/legit-site.png' %}" alt="" class="img-thumbnail">
+            </a>
+        </div>
+
+        <div class="col-sm-4 col-md-6 col-lg-3">
+            <a href="https://mapleacademy.com.ng/" >
+                <img src="{% static 'images/maple.png' %}" alt="" class="img-thumbnail">
+            </a>
+        </div>
+    </div>
+
+    <div class="works-ctn">
+
+
+        <a href="https://ausearch.netlify.app/" ><img src="./assets/au-search.png" alt="" class="work"></a>
+        <a href="" ><img src="./assets/legit-site.png" alt="" class="work"></a>
+        <a href="" ><img src="./assets/" alt="" class="work"></a>
+        <a href="" ><img src="./assets/" alt="" class="work"></a>
+    </div>
+</div>
+{% endblock content %}

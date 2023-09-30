@@ -1,0 +1,16 @@
+.pg-ctn {
+    border: .2em solid #999;
+    background-color: #fff;
+    border-radius: 1em;
+    padding: 1em 2em;
+}
+
+.pg-ctn p{
+    font-weight: 700;
+    text-align: justify;
+}
+
+.form-control:focus {
+    border-color: #999;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #999;
+  }
