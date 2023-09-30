@@ -10,11 +10,14 @@
 
     <form name="contact-form" action="{% url 'contact' %}" method="POST" data-netlify="true" class="form-group" autocomplete="off">
         {% csrf_token %}
+        {% for field in form %}
+            <div class="form-group">
+                {{ field.errors }}
+                <p>{{ field }}</p>
+            </div>
+        {% endfor %}
 
-        {{ form.as_p }}
-        
         <button type="submit" id="submit-button" class="btn form-control btn-primary bg-dark border-0 ">Send</button>
-        
     </form>
 </div>
 {% endblock content %}
