@@ -1,1 +1,12 @@
 *.sqlite3
+**.sqlite3
+**.env
+*.env
+.env 
+env/
+db.sqlite3
+.dockerignore
+Dockerfile
+fly.toml
+staticfiles/
+*/staticfiles/

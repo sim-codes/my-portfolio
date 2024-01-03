@@ -7,6 +7,10 @@ name = "pypi"
 django = "==4.2"
 django-compressor = "==4.4"
 easy-thumbnails = "==2.8.5"
+gunicorn = "*"
+dj-database-url = "*"
+psycopg2-binary = "*"
+whitenoise = "*"
 
 [dev-packages]
 
