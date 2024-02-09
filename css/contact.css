@@ -1,34 +1,29 @@
 *{
     color: #999;
 }
+
 .form-ctn {
-    max-width: 35em;
-    margin: 0 auto;
-    height: auto;
+    width: auto;
     border: .2em solid #999;
     background-color: #999;
     border-radius: 1em;
-    padding: 2em;
+    padding: 1em;
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input:focus{
+input:focus, textarea:focus{
     outline: none;
     border-color: 2px solid #FCD12A;
-}
-
-textarea:focus{
-    outline: none;
-    border-color: 1px solid #FCD12A;
 }
   
 input{
     font-size: 1em;
     padding: 0.5em;
-    margin-top: 0.5em;
+    /* margin-top: 0.3em; */
 }
 
 #submit-button{
@@ -45,18 +40,18 @@ input{
 textarea{
     padding: 0.5em;
     font-size: 1em;
-    margin-top: 0.5em;
+    /* margin-top: 0.3em; */
     width: 17em;
     min-height: 5em;
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     border: none;
     resize: none;
 }
 
 form input{
-    display: block;
+    /* display: block; */
     border: none;
     border-radius: 0.3em;
     min-height: 2em;
-    min-width: 16.5em;
+    min-width: 17em;
 }

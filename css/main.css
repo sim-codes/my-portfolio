@@ -1,1 +1,58 @@
-@import"https://fonts.googleapis.com/css?family=Exo:100";@keyframes bg-scrolling-reverse{100%{background-position:50px 50px}}@keyframes bg-scrolling{0%{background-position:50px 50px}}body{color:#999;font:400 16px/1.5 exo,ubuntu,"segoe ui",helvetica,arial,sans-serif;text-align:center;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;animation:bg-scrolling-reverse .92s infinite;animation-timing-function:linear}body::before{content:"SIM";font-size:8rem;font-weight:100;font-style:normal}
+@import"https://fonts.googleapis.com/css?family=Exo:100";
+
+/* Background design */
+@keyframes bg-scrolling-reverse{
+    100%{
+        background-position:50px 50px
+    }
+}
+@keyframes bg-scrolling{
+    0%{
+        background-position:50px 50px
+    }
+}
+
+body{
+    color:#999;
+    font:400 16px/1.5 exo,ubuntu,"segoe ui",helvetica,arial,sans-serif;
+    text-align:center;
+    /* background-color: #666; */
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;animation:bg-scrolling-reverse .92s infinite;
+    animation-timing-function:linear;
+    font-size: 1.1em;
+    font-weight: 700;
+
+
+    /* Body content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+.logo{
+    /* content:"SIM"; */
+    font-size:8rem;
+    font-weight:100;
+    font-style: normal;
+    text-decoration: none;
+    color: #999;
+}
+
+/* Header styling */
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+header a{
+    margin-right: 2em;
+    text-decoration: none;
+    color: currentcolor;
+    font-size: 1em;
+    font-weight: 700;
+}

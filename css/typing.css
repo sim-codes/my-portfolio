@@ -1,0 +1,95 @@
+.cursor {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0.6em;
+    height: 1em;
+    background-color: #fff;
+    animation: blink 1s infinite;
+}
+  
+.cursor-stale {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 0.6em;
+    height: 1em;
+    background-color: #fff;
+  }
+
+h1 {
+    font-size: 9vmin;
+    font-weight: 700;
+}
+
+@keyframes typing {
+    0.0000%, 27.3488% { content: ""; }
+    1.1395%, 26.2093% { content: "a"; }
+    2.2791%, 25.0698% { content: "a D"; }
+    3.4186%, 23.9302% { content: "a De"; }
+    4.5581%, 22.7907% { content: "a Dev"; }
+    5.6977%, 21.6512% { content: "a Deve"; }
+    6.8372%, 20.5116% { content: "a Devel"; }
+    7.9767%, 19.3721% { content: "a Develo"; }
+    9.1163%, 18.2326% { content: "a Develop"; }
+    10.2558%, 17.0930% { content: "a Develope"; }
+    11.3953%, 15.9535% { content: "a Developer"; }
+    12.5348%, 14.8140% { content: "a Developer."; }
+  
+    33.0464%, 56.9764% { content: ""; }
+    34.1859%, 55.8369% { content: "a"; }
+    35.3254%, 54.6974% { content: "a R"; }
+    36.4649%, 53.5579% { content: "a Re"; }
+    37.6044%, 52.4184% { content: "a Rea"; }
+    38.7439%, 51.2789% { content: "a Read"; }
+    39.8834%, 50.1394% { content: "a Reade"; }
+    41.0229%, 48.9999% { content: "a Reader"; }
+    42.1624%, 47.8604% { content: "a Reader."; }
+  
+    75.2093%, 99.1393% { content: ""; }
+    76.3488%, 97.9998% { content: "M"; }
+    77.4883%, 96.8603% { content: "Mi"; }
+    78.6278%, 95.7208% { content: "Mic"; }
+    79.7673%, 94.5813% { content: "Mich"; }
+    80.9068%, 93.4418% { content: "Micha"; }
+    82.0463%, 92.3023% { content: "Michae"; }
+    83.1858%, 91.1628% { content: "Michael"; }
+    84.3253%, 90.0233% { content: "Michael."; }
+  
+  }
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "a Developer."; }
+      35% { content: "a Reader."; }
+      80% { content: "Michael."; }
+    }
+  
+    .typewriter::before {
+      content: "a Developer.";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
