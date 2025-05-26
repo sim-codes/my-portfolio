@@ -23,10 +23,31 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="manifest" href="simportfolio.webmanifest" />
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="./css/work.css"> -->
-
+    <link rel="stylesheet" href="./css/work.css">
+    <script src="./js/projects.js" defer></script>
+    <script src="./js/work.js" defer></script>
 </head>
 <body>
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalMediaContainer" class="mb-3"></div> <!-- Container for image or video -->
+                    <p id="modalProjectDescription"></p>
+                    <p><strong>Stack:</strong> <div id="modalProjectStack"></div></p> 
+                </div>
+                <div class="modal-footer">
+                    <a href="#" id="modalProjectLink" class="btn btn-primary" target="_blank">View Project</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <a href="/" class="logo navbar-brand">SIM</a>
@@ -37,59 +58,15 @@
             <h1>Mobile</h1>
             
             
-            <ul class="d-inline-flex flex-wrap gap-3">
-                <li class="mx-2">
-                    <a href="https://github.com/sim-codes/react-native-weather-app.git" class="text-decoration-none text-black">
-                        Weather App
-
-                    </a>
-                </li>
-                <li class="mx-2">
-                    <a href="https://github.com/sim-codes/whatsapp-clone-react-native.git" class="text-decoration-none text-black">
-                        WhatsApp UI Clone
-                    </a>
-                </li>
-                <li class="mx-2">
-                    <a href="https://github.com/sim-codes/signup-login-mobile-ui.git" class="text-decoration-none text-black">
-                        Authentication Pages
-                    </a>
-                </li>
+            <ul id="mobile-projects" class="d-inline-flex flex-wrap gap-3">
+                <!-- Mobile projects will be dynamically inserted here -->
             </ul>
         </div>
 
         <div class="row">
             <h1>Web</h1>
-            <div class="d-flex flex-row align-items-center justify-content-center flex-wrap gap-3">
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://diagnosia-sim.vercel.app/" >
-                        <img src="./assets/diagnosia.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://medcare-sim.vercel.app/" >
-                        <img src="./assets/medcare.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://phone-link.vercel.app/" >
-                        <img src="./assets/phone-link.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://mapleacademy.com.ng/" >
-                        <img src="./assets/eca.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://legitimatehomes.com.ng/" >
-                        <img src="./assets/legit-site.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-3">
-                    <a href="https://mapleacademy.com.ng/" >
-                        <img src="./assets/maple.png" alt="" class="img-thumbnail">
-                    </a>
-                </div>
+            <div id="web-projects" class="d-flex flex-row align-items-center justify-content-center flex-wrap gap-3">
+                <!-- Web projects will be dynamically inserted here -->
             </div>
         </div>
     </main>

@@ -1,0 +1,84 @@
+/* General Project Card Styling */
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Ensures the whole card is clickable */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures content like images respect border-radius */
+    background-color: #f8f9fa; /* Light background for the card */
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.project-card img.img-thumbnail {
+    border: none; /* Remove default bootstrap border if not needed or style as preferred */
+    margin-bottom: 10px;
+    width: 100%; /* Make image take full width of the card */
+    height: 200px; /* Fixed height for all thumbnails */
+    object-fit: cover; /* Crop image to fit, maintaining aspect ratio */
+}
+
+.project-card h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Stack Display Styling */
+.stack-display {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Space between stack items */
+    margin-top: 8px;
+}
+
+.stack-item {
+    background-color: #495057; /* Dark grey shade */
+    color: #f8f9fa; /* Light text color for contrast */
+    padding: 4px 10px; /* Slightly adjusted padding */
+    border-radius: 5px; /* Slightly more rounded corners */
+    font-size: 0.85rem; /* Adjusted font size */
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Softer shadow */
+    margin: 2px; /* Added margin for spacing on the card */
+}
+
+/* Specific styling for mobile project list items if needed */
+#mobile-projects li.project-card {
+    list-style-type: none; /* Remove bullet points */
+}
+
+/* Modal Styling Adjustments */
+#projectModal .modal-body img {
+    max-height: 400px; /* Adjust as needed */
+    object-fit: contain; /* Ensures the whole image is visible without cropping */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#projectModal .modal-body #modalProjectStack {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 8px; /* Add gap between stack items in the modal */
+    margin-top: 5px;
+}
+
+/* Ensure modal content is centered if it's a single column */
+#projectModal .modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: calc(100% - 1rem); /* Adjust based on your needs */
+}
+
+@media (min-width: 992px) { /* Large devices */
+    #projectModal .modal-lg {
+        max-width: 800px; /* Or your preferred max width */
+    }
+}
