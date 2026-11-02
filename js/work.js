@@ -97,9 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.appendChild(cardImage);
             }
 
-            const projectName = document.createElement(isWeb ? 'h5' : 'span');
+            const projectName = document.createElement(isWeb ? 'h3' : 'span');
             projectName.textContent = project.name;
             projectName.classList.add('mt-2');
+            if (isWeb) {
+                projectName.classList.add('h5');
+            }
             link.appendChild(projectName);
 
             const stackP = document.createElement('div');
