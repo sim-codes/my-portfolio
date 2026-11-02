@@ -1,3 +1,9 @@
+.ct-ctn p{
+    font-size: 0.9em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+}
+
 .icon-ctn img{
     width: 1.2em;
     height: auto;
@@ -16,7 +22,7 @@
     text-align: justify;
 }
 
-.pg-ctn p a, .intro a, .ct-ctn a{
+.pg-ctn p a, .intro a{
     color: inherit;
 }
 
