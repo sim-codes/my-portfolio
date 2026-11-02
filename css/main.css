@@ -13,7 +13,7 @@
 }
 
 body{
-    color:#999;
+    color:#666;
     /* font:400 16px/1.5 exo,ubuntu,"segoe ui",helvetica,arial,sans-serif; */
     text-align:center;
     /* background-color: #666; */
@@ -38,7 +38,7 @@ body{
     font-weight:100;
     font-style: normal;
     text-decoration: none;
-    color: #999;
+    color: #666;
 }
 
 /* Header styling */
