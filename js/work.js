@@ -72,7 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else if (project.mediaUrl) {
                     const image = document.createElement('img');
                     image.src = project.mediaUrl; // Use mediaUrl for images too
-                    image.alt = project.name;
+                    image.alt = `Screenshot of ${project.name}`;
+                    image.width = project.mediaWidth;
+                    image.height = project.mediaHeight;
                     image.classList.add('img-fluid');
                     image.style.maxHeight = '400px';
                     modalMediaContainer.appendChild(image);
@@ -92,7 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (isWeb) { // Only add image for web projects
                 const cardImage = document.createElement('img');
                 cardImage.src = (project.mediaType === 'image' && project.mediaUrl) ? project.mediaUrl : (project.image || 'https://via.placeholder.com/300x200.png?text=' + encodeURIComponent(project.name));
-                cardImage.alt = project.name;
+                cardImage.alt = `Screenshot of ${project.name}`;
+                cardImage.width = project.mediaWidth;
+                cardImage.height = project.mediaHeight;
+                cardImage.loading = "lazy";
                 cardImage.classList.add('img-thumbnail');
                 link.appendChild(cardImage);
             }

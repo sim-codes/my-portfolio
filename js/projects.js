@@ -36,7 +36,9 @@ const webProjects = [
         stack: ["Node.js", "Express", "MongoDB", "EJS"],
         description: "Developed an electronic portal for students to record daily work and upload Form 8/SCAR submissions. Implemented role-based access for institutions (school & ITF) to review and manage submissions.",
         mediaType: "image",
-        mediaUrl: "./assets/logbook.png"
+        mediaUrl: "./assets/logbook.png",
+        mediaWidth: 2502,
+        mediaHeight: 1155
     },
     {
         name: "Diagnosia",
@@ -45,7 +47,9 @@ const webProjects = [
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application for diagnosis.",
         mediaType: "image", // Added mediaType
-        mediaUrl: "./assets/diagnosia.png"
+        mediaUrl: "./assets/diagnosia.png",
+        mediaWidth: 1308,
+        mediaHeight: 816
     },
     {
         name: "Ehis Culinary Arts Website",
@@ -54,7 +58,9 @@ const webProjects = [
         stack: ["WordPress"],
         description: "An educational website.",
         mediaType: "image",
-        mediaUrl: "./assets/eca.png"
+        mediaUrl: "./assets/eca.png",
+        mediaWidth: 1280,
+        mediaHeight: 1280
     },
     {
         name: "Medcare",
@@ -64,7 +70,9 @@ const webProjects = [
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application for medical care.",
         mediaType: "image",
-        mediaUrl: "./assets/medcare.png"
+        mediaUrl: "./assets/medcare.png",
+        mediaWidth: 2447,
+        mediaHeight: 1238
     },
     {
         name: "Phone Link",
@@ -73,6 +81,8 @@ const webProjects = [
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application to link your phone.",
         mediaType: "image",
-        mediaUrl: "./assets/phone-link.png"
+        mediaUrl: "./assets/phone-link.png",
+        mediaWidth: 1308,
+        mediaHeight: 816
     }
 ];
