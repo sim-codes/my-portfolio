@@ -36,53 +36,53 @@ const webProjects = [
         stack: ["Node.js", "Express", "MongoDB", "EJS"],
         description: "Developed an electronic portal for students to record daily work and upload Form 8/SCAR submissions. Implemented role-based access for institutions (school & ITF) to review and manage submissions.",
         mediaType: "image",
-        mediaUrl: "./assets/logbook.png",
-        mediaWidth: 2502,
-        mediaHeight: 1155
+        mediaUrl: "./assets/logbook.webp",
+        mediaWidth: 1200,
+        mediaHeight: 554
     },
     {
         name: "Diagnosia",
         link: "https://diagnosia-sim.vercel.app/",
-        image: "./assets/diagnosia.png", // This will be used if mediaType is 'image'
+        image: "./assets/diagnosia.webp", // This will be used if mediaType is 'image'
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application for diagnosis.",
         mediaType: "image", // Added mediaType
-        mediaUrl: "./assets/diagnosia.png",
-        mediaWidth: 1308,
-        mediaHeight: 816
+        mediaUrl: "./assets/diagnosia.webp",
+        mediaWidth: 1200,
+        mediaHeight: 749
     },
     {
         name: "Ehis Culinary Arts Website",
         link: "https://ecalagos.com.ng/",
-        image: "./assets/eca.png",
+        image: "./assets/eca.webp",
         stack: ["WordPress"],
         description: "An educational website.",
         mediaType: "image",
-        mediaUrl: "./assets/eca.png",
-        mediaWidth: 1280,
-        mediaHeight: 1280
+        mediaUrl: "./assets/eca.webp",
+        mediaWidth: 1200,
+        mediaHeight: 1200
     },
     {
         name: "Medcare",
         hidden: true,
         link: "https://medcare-sim.vercel.app/",
-        image: "./assets/medcare.png",
+        image: "./assets/medcare.webp",
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application for medical care.",
         mediaType: "image",
-        mediaUrl: "./assets/medcare.png",
-        mediaWidth: 2447,
-        mediaHeight: 1238
+        mediaUrl: "./assets/medcare.webp",
+        mediaWidth: 1200,
+        mediaHeight: 607
     },
     {
         name: "Phone Link",
         link: "https://phone-link.vercel.app/",
-        image: "./assets/phone-link.png",
+        image: "./assets/phone-link.webp",
         stack: ["HTML", "CSS", "JavaScript"],
         description: "A web application to link your phone.",
         mediaType: "image",
-        mediaUrl: "./assets/phone-link.png",
-        mediaWidth: 1308,
-        mediaHeight: 816
+        mediaUrl: "./assets/phone-link.webp",
+        mediaWidth: 1200,
+        mediaHeight: 749
     }
 ];
