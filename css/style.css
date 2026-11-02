@@ -15,7 +15,7 @@
     text-align: justify;
 }
 
-.pg-ctn p a, .intro a{
+.pg-ctn p a, .intro a, .ct-ctn a{
     color: inherit;
 }
 

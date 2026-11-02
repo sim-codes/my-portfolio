@@ -32,24 +32,32 @@
         <a href="/" class="logo navbar-brand">SIM</a>
     </div>
 
-    <main class="form-ctn container mb-3">
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-                <input type="text" name="name" placeholder="Enter name" required/>
+    <main class="pg-ctn contact-ctn container mb-3">
+        <h1>Get in touch</h1>
+        <p class="contact-intro">Send me a message.</p>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="company">
+            <p class="visually-hidden">
+                <label>Leave this field empty <input name="company" tabindex="-1" autocomplete="off"></label>
             </p>
             <p>
-                <input type="text" name="number" placeholder="Enter number" required/>
+                <label for="contact-name">Name</label>
+                <input type="text" id="contact-name" name="name" autocomplete="name" required>
             </p>
             <p>
-                <input type="text" name="email" placeholder="Enter email" required/>
+                <label for="contact-email">Email</label>
+                <input type="email" id="contact-email" name="email" autocomplete="email" required>
             </p>
             <p>
-                <textarea name="message" placeholder="Enter message" required></textarea><br />
+                <label for="contact-phone">Phone <span class="optional">(optional)</span></label>
+                <input type="tel" id="contact-phone" name="number" autocomplete="tel">
+            </p>
+            <p>
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" required></textarea>
             </p>
             <p>
                 <button type="submit" id="submit-button">Send</button>
             </p>
-            
         </form>
     </main>
 
@@ -63,13 +71,12 @@
     </header>
 
     <footer class="container">
-        <div class="ct-ctn">
-            <p>+234 907 919 9124 | segunmichael24@gmail.com</p>
-        </div>
         <div class="icon-ctn">
-            <a href="https://twitter.com/simcodes_" target="_blank"><img src="./assets/x.svg" alt=""></a>
-            <a href="https://www.instagram.com/sim.media/" target="_blank"><img src="./assets/instagram.svg" alt=""></a>
-            <a href="https://github.com/sim-codes" target="_blank"><img src="./assets/git.svg" alt=""></a>
+            <a href="https://twitter.com/simcodes_" target="_blank"><img src="./assets/x.svg" alt="X (Twitter)"></a>
+            <a href="https://www.instagram.com/sim.media/" target="_blank"><img src="./assets/instagram.svg" alt="Instagram"></a>
+            <a href="https://github.com/sim-codes" target="_blank"><img src="./assets/git.svg" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/segunmichael" target="_blank"><img src="./assets/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://orcid.org/0009-0000-0956-2585" target="_blank"><img src="./assets/orcid.svg" alt="ORCID"></a>
         </div>
     </footer>
 
