@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const displayProjects = (projects, container, isWeb) => {
-        projects.forEach(project => {
+        projects.filter(project => !project.hidden).forEach(project => {
             const projectElement = document.createElement(isWeb ? 'div' : 'li');
             projectElement.classList.add(...(isWeb ? ['col-sm-4', 'col-md-6', 'col-lg-3', 'project-card'] : ['mx-2', 'project-card']));
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         video.style.maxHeight = '400px';
                         modalMediaContainer.appendChild(video);
                     }
-                } else {
+                } else if (project.mediaUrl) {
                     const image = document.createElement('img');
                     image.src = project.mediaUrl; // Use mediaUrl for images too
                     image.alt = project.name;

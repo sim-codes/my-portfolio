@@ -3,9 +3,7 @@ const mobileProjects = [
         name: "YourScan",
         link: "https://github.com/sim-codes/your-scan",
         stack: ["React Native", "Expo", "OCR"],
-        description: "Built a mobile app to OCR both typed and handwritten text from camera or image upload. Integrated a rich-text editor for users to format and correct scanned text.",
-        mediaType: "video",
-        mediaUrl: "https://via.placeholder.com/400x300.mp4?text=YourScan+Video" // Placeholder video
+        description: "Built a mobile app to OCR both typed and handwritten text from camera or image upload. Integrated a rich-text editor for users to format and correct scanned text."
     },
     {
         name: "AttendSmart (Full-Stack Platform)",
@@ -19,9 +17,7 @@ const mobileProjects = [
         name: "Weather App",
         link: "https://github.com/sim-codes/react-native-weather-app.git",
         stack: ["React Native"],
-        description: "A mobile application to check the weather.",
-        mediaType: "video", // Added mediaType
-        mediaUrl: "https://via.placeholder.com/400x300.mp4?text=Weather+App+Video"
+        description: "A mobile application to check the weather."
     },
     {
         name: "WhatsApp UI Clone",
@@ -62,6 +58,7 @@ const webProjects = [
     },
     {
         name: "Medcare",
+        hidden: true,
         link: "https://medcare-sim.vercel.app/",
         image: "./assets/medcare.png",
         stack: ["HTML", "CSS", "JavaScript"],
