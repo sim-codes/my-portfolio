@@ -20,40 +20,60 @@ h1 {
     font-weight: 700;
 }
 
+.typewriter-line {
+    font-size: 6vmin;
+    font-weight: 400;
+    min-height: 1.5em;
+}
+
+.intro {
+    max-width: 40em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "a"; }
-    2.2791%, 25.0698% { content: "a D"; }
-    3.4186%, 23.9302% { content: "a De"; }
-    4.5581%, 22.7907% { content: "a Dev"; }
-    5.6977%, 21.6512% { content: "a Deve"; }
-    6.8372%, 20.5116% { content: "a Devel"; }
-    7.9767%, 19.3721% { content: "a Develo"; }
-    9.1163%, 18.2326% { content: "a Develop"; }
-    10.2558%, 17.0930% { content: "a Develope"; }
-    11.3953%, 15.9535% { content: "a Developer"; }
-    12.5348%, 14.8140% { content: "a Developer."; }
-  
-    33.0464%, 56.9764% { content: ""; }
-    34.1859%, 55.8369% { content: "a"; }
-    35.3254%, 54.6974% { content: "a T"; }
-    36.4649%, 53.5579% { content: "a Te"; }
-    37.6044%, 52.4184% { content: "a Tea"; }
-    38.7439%, 51.2789% { content: "a Teac"; }
-    39.8834%, 50.1394% { content: "a Teach"; }
-    41.0229%, 48.9999% { content: "a Teacher"; }
-    42.1624%, 47.8604% { content: "a Teacher."; }
-  
-    75.2093%, 99.1393% { content: ""; }
-    76.3488%, 97.9998% { content: "M"; }
-    77.4883%, 96.8603% { content: "Mi"; }
-    78.6278%, 95.7208% { content: "Mic"; }
-    79.7673%, 94.5813% { content: "Mich"; }
-    80.9068%, 93.4418% { content: "Micha"; }
-    82.0463%, 92.3023% { content: "Michae"; }
-    83.1858%, 91.1628% { content: "Michael"; }
-    84.3253%, 90.0233% { content: "Michael."; }
-  
+    0.0000%, 48.0000% { content: ""; }
+    1.0000%, 47.0000% { content: "a"; }
+    2.0000%, 46.0000% { content: "a "; }
+    3.0000%, 45.0000% { content: "a s"; }
+    4.0000%, 44.0000% { content: "a so"; }
+    5.0000%, 43.0000% { content: "a sof"; }
+    6.0000%, 42.0000% { content: "a soft"; }
+    7.0000%, 41.0000% { content: "a softw"; }
+    8.0000%, 40.0000% { content: "a softwa"; }
+    9.0000%, 39.0000% { content: "a softwar"; }
+    10.0000%, 38.0000% { content: "a software"; }
+    11.0000%, 37.0000% { content: "a software "; }
+    12.0000%, 36.0000% { content: "a software e"; }
+    13.0000%, 35.0000% { content: "a software en"; }
+    14.0000%, 34.0000% { content: "a software eng"; }
+    15.0000%, 33.0000% { content: "a software engi"; }
+    16.0000%, 32.0000% { content: "a software engin"; }
+    17.0000%, 31.0000% { content: "a software engine"; }
+    18.0000%, 30.0000% { content: "a software enginee"; }
+    19.0000%, 29.0000% { content: "a software engineer"; }
+    20.0000%, 28.0000% { content: "a software engineer."; }
+
+    50.0000%, 98.0000% { content: ""; }
+    51.0000%, 97.0000% { content: "i"; }
+    52.0000%, 96.0000% { content: "in"; }
+    53.0000%, 95.0000% { content: "in "; }
+    54.0000%, 94.0000% { content: "in L"; }
+    55.0000%, 93.0000% { content: "in La"; }
+    56.0000%, 92.0000% { content: "in Lag"; }
+    57.0000%, 91.0000% { content: "in Lago"; }
+    58.0000%, 90.0000% { content: "in Lagos"; }
+    59.0000%, 89.0000% { content: "in Lagos,"; }
+    60.0000%, 88.0000% { content: "in Lagos, "; }
+    61.0000%, 87.0000% { content: "in Lagos, N"; }
+    62.0000%, 86.0000% { content: "in Lagos, Ni"; }
+    63.0000%, 85.0000% { content: "in Lagos, Nig"; }
+    64.0000%, 84.0000% { content: "in Lagos, Nige"; }
+    65.0000%, 83.0000% { content: "in Lagos, Niger"; }
+    66.0000%, 82.0000% { content: "in Lagos, Nigeri"; }
+    67.0000%, 81.0000% { content: "in Lagos, Nigeria"; }
+    68.0000%, 80.0000% { content: "in Lagos, Nigeria."; }
   }
   
   @keyframes blink {
@@ -83,13 +103,12 @@ h1 {
     }
     
     @keyframes sequencePopup {
-      0%, 100% { content: "a Developer."; }
-      35% { content: "a Reader."; }
-      80% { content: "Michael."; }
+      0%, 100% { content: "a software engineer."; }
+      50% { content: "in Lagos, Nigeria."; }
     }
   
     .typewriter::before {
-      content: "a Developer.";
+      content: "a software engineer.";
       animation: sequencePopup 12s linear infinite;
     }
   }
