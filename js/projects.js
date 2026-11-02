@@ -53,7 +53,7 @@ const webProjects = [
     },
     {
         name: "Ehis Culinary Arts Website",
-        link: "https://mapleacademy.com.ng/",
+        link: "https://ecalagos.com.ng/",
         image: "./assets/eca.png",
         stack: ["WordPress"],
         description: "An educational website.",
